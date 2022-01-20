@@ -13,3 +13,11 @@ bool checkTheRowForSameElement(char** sudoku, int row, char num) {
 	}
 	return true;
 }
+bool checkTheColumnForSameElement(char** sudoku, int position, char num) {
+	for (int i = 0; i < SIZE_OF_SUDOKU; i++) {
+		if (sudoku[i][position] == num) {
+			return false;
+		}
+	}
+	return true;
+}
