@@ -36,3 +36,14 @@ bool check3x3(char** sudoku, int row, int position, char num) {
 	}
 	return true;
 }
+
+bool checkAll(char** sudoku, int row, int position, char num) {
+	if (check3x3(sudoku, row, position, num)) {
+		if (checkTheColumnForSameElement(sudoku, position, num)) {
+			if (checkTheRowForSameElement(sudoku, row, num)) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
