@@ -9,7 +9,7 @@
 * @idnumber 6MI0600018
 * @compiler VC
 *
-* <Function that count places that need to be filled>
+* <Function that count places that need to be filled out with numbers from 1-9>
 *
 */
 
